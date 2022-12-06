@@ -1,6 +1,10 @@
+import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:desktop_window/desktop_window.dart';
 import 'package:secure_control_panel/screens/authorisation_screen.dart';
+import 'package:secure_control_panel/screens/desktop_screen.dart';
+
+import 'config.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
@@ -19,12 +23,17 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Secure Control Panel',
-      debugShowCheckedModeBanner: false,
+      debugShowCheckedModeBanner: Config.kDebugMode,
       theme: ThemeData(
         fontFamily: "MacPawFixel",
         primarySwatch: Colors.orange,
       ),
       home: const AuthorisationScreen(),
+      initialRoute: "/authorisationScreen",
+      routes: {
+        "/authorisationScreen": (_) => const AuthorisationScreen(),
+        "/desktop": (_) => const DesktopScreen(),
+      },
     );
   }
 }

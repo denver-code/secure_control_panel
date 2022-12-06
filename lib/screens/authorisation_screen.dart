@@ -180,23 +180,29 @@ class AuthorisationScreen extends StatelessWidget {
                             const SizedBox(
                               height: 25,
                             ),
-                            Container(
-                              alignment: Alignment.center,
-                              width: MediaQuery.of(context).size.width / 6,
-                              height: 34,
-                              decoration: BoxDecoration(
-                                border: Border.all(
-                                  color: Colors.white,
-                                  width: 2,
+                            GestureDetector(
+                              onTap: (() {
+                                Navigator.of(context).pushNamedAndRemoveUntil(
+                                    "/desktop", (route) => false);
+                              }),
+                              child: Container(
+                                alignment: Alignment.center,
+                                width: MediaQuery.of(context).size.width / 6,
+                                height: 34,
+                                decoration: BoxDecoration(
+                                  border: Border.all(
+                                    color: Colors.white,
+                                    width: 2,
+                                  ),
                                 ),
-                              ),
-                              child: const Text(
-                                "CONTINUE OFFLINE",
-                                textAlign: TextAlign.center,
-                                style: TextStyle(
-                                  color: Colors.white,
-                                  fontSize: 17,
-                                  letterSpacing: 2.0,
+                                child: const Text(
+                                  "CONTINUE OFFLINE",
+                                  textAlign: TextAlign.center,
+                                  style: TextStyle(
+                                    color: Colors.white,
+                                    fontSize: 17,
+                                    letterSpacing: 2.0,
+                                  ),
                                 ),
                               ),
                             ),
