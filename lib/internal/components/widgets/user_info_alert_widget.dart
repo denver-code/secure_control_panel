@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 
 class UserInfoAlertWidget extends StatelessWidget {
   const UserInfoAlertWidget({Key? key, required this.user}) : super(key: key);
-  final user;
+  final Map<String, Object> user;
 
   @override
   Widget build(BuildContext context) {

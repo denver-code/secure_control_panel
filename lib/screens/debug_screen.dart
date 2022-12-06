@@ -14,7 +14,7 @@ class DebugScreen extends StatelessWidget {
         exitButtonCallback: () {
           Navigator.of(context).pop();
         },
-        contentWidgetList: [],
+        contentWidgetList: const [],
         user: Config.guestOfflineUser);
   }
 }

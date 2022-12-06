@@ -6,7 +6,7 @@ import 'outline_button_widget.dart';
 class UserOnScreenTextWidget extends StatelessWidget {
   const UserOnScreenTextWidget({Key? key, required this.user})
       : super(key: key);
-  final user;
+  final Map<String, Object> user;
 
   @override
   Widget build(BuildContext context) {
