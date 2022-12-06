@@ -2,6 +2,7 @@ import 'package:flutter/foundation.dart';
 import 'package:flutter/material.dart';
 import 'package:desktop_window/desktop_window.dart';
 import 'package:secure_control_panel/screens/authorisation_screen.dart';
+import 'package:secure_control_panel/screens/debug_screen.dart';
 import 'package:secure_control_panel/screens/desktop_screen.dart';
 
 import 'config.dart';
@@ -33,6 +34,7 @@ class MyApp extends StatelessWidget {
       routes: {
         "/authorisationScreen": (_) => const AuthorisationScreen(),
         "/desktop": (_) => const DesktopScreen(),
+        "/debug": (_) => const DebugScreen()
       },
     );
   }
