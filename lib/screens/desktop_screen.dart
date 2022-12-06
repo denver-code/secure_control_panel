@@ -2,7 +2,8 @@ import "package:flutter/foundation.dart";
 import "package:flutter/material.dart";
 import "package:flutter/services.dart";
 import "package:secure_control_panel/config.dart";
-import "package:secure_control_panel/internal/components/widgets/outline_button_component.dart";
+import 'package:secure_control_panel/internal/components/widgets/debug_menu_widget.dart';
+import 'package:secure_control_panel/internal/components/widgets/outline_button_widget.dart';
 import "package:secure_control_panel/internal/services/hex2color.dart";
 
 class DesktopScreen extends StatelessWidget {
@@ -140,39 +141,7 @@ class DesktopScreen extends StatelessWidget {
             ),
             (() {
               if (Config.kDebugMode) {
-                return Positioned.fill(
-                  child: Align(
-                    alignment: Alignment.bottomRight,
-                    child: Padding(
-                      padding: const EdgeInsets.all(15.0),
-                      child: Column(
-                        mainAxisAlignment: MainAxisAlignment.end,
-                        children: [
-                          const Text(
-                            "GO TO LOGIN SCREEN\nDEBUG: TRUE",
-                            style: TextStyle(
-                              color: Colors.white,
-                              fontSize: 13,
-                            ),
-                          ),
-                          const SizedBox(
-                            height: 5,
-                          ),
-                          OutlineButtonComponent(
-                            gestureTapCallback: (() {
-                              Navigator.of(context).pushNamedAndRemoveUntil(
-                                  "/authorisationScreen", (route) => false);
-                            }),
-                            text: "GO BACK",
-                            width: MediaQuery.of(context).size.width / 9,
-                            height: 34,
-                            fontSize: 13,
-                          ),
-                        ],
-                      ),
-                    ),
-                  ),
-                );
+                return const DebugMenuWidget();
               } else {
                 return Container();
               }
