@@ -51,7 +51,13 @@ class AuthorisationScreen extends StatelessWidget {
                   hintText: "Unique UAC",
                   lenghtLimit: 9),
               OutlineButtonComponent(
-                  gestureTapCallback: () {},
+                  gestureTapCallback: () {
+                    ScaffoldMessenger.of(context).showSnackBar(
+                      const SnackBar(
+                          content: Text(
+                              "This operation not avaible while you offline.")),
+                    );
+                  },
                   text: "OK",
                   width: MediaQuery.of(context).size.width / 9,
                   height: 34)
