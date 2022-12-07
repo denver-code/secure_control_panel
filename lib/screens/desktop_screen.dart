@@ -1,5 +1,7 @@
 import "package:flutter/material.dart";
 import "package:secure_control_panel/config.dart";
+import 'package:secure_control_panel/internal/components/widgets/delimiter_widget.dart';
+import 'package:secure_control_panel/internal/components/widgets/desktop_icon_widget.dart';
 import '../internal/components/layouts/main_layout.dart';
 
 class DesktopScreen extends StatelessWidget {
@@ -15,6 +17,97 @@ class DesktopScreen extends StatelessWidget {
         width: MediaQuery.of(context).size.width / 1.6,
         height: MediaQuery.of(context).size.height / 1.3,
         exitButtonCallback: () {},
-        contentWidgetList: const []);
+        contentWidgetList: [
+          SingleChildScrollView(
+            child: Column(
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                  children: const [
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                    DesktopIconWidget(),
+                  ],
+                ),
+              ],
+            ),
+          ),
+        ]);
   }
 }
