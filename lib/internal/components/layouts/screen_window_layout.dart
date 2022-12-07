@@ -67,12 +67,16 @@ class ScreenWindowLayout extends StatelessWidget {
                   ),
                 ),
               ),
-              Padding(
-                padding: internalBodyPadding,
-                child: Column(
-                  children: contentWidgetList,
+              Expanded(
+                child: SingleChildScrollView(
+                  child: Padding(
+                    padding: internalBodyPadding,
+                    child: Column(
+                      children: contentWidgetList,
+                    ),
+                  ),
                 ),
-              )
+              ),
             ],
           ),
         ),
