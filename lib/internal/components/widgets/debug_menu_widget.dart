@@ -13,9 +13,10 @@ class DebugMenuWidget extends StatelessWidget {
           padding: const EdgeInsets.all(15.0),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.end,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               const Text(
-                "GO TO LOGIN SCREEN\nDEBUG: TRUE",
+                "FAST DEBUG MENU\nDEBUG: TRUE",
                 style: TextStyle(
                   color: Colors.white,
                   fontSize: 13,
@@ -27,9 +28,9 @@ class DebugMenuWidget extends StatelessWidget {
               OutlineButtonComponent(
                 gestureTapCallback: (() {
                   Navigator.of(context).pushNamedAndRemoveUntil(
-                      "/authorisationScreen", (route) => false);
+                      "/authorisation", (route) => false);
                 }),
-                text: "AUTH SCREEN",
+                text: "AUTHORISATION",
                 width: MediaQuery.of(context).size.width / 9,
                 height: 34,
                 fontSize: 13,
@@ -41,7 +42,7 @@ class DebugMenuWidget extends StatelessWidget {
                 gestureTapCallback: (() {
                   Navigator.of(context).pushNamed("/debug");
                 }),
-                text: "DEBUG SCREEN",
+                text: "DEBUG APP",
                 width: MediaQuery.of(context).size.width / 9,
                 height: 34,
                 fontSize: 13,
