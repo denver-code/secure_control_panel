@@ -1,16 +1,32 @@
 # SCP - Secure Control Panel
 
-A new Flutter project.
+Details coming soon.......
 
-## Getting Started
+## Watch the progress  
+You can follow me on twitter and watch all progress of development!  
+[Twitter](https://twitter.com/idenver_bot)  
+[Telegram](https://t.me/secure_control_panel)
 
-This project is a starting point for a Flutter application.
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Run SCP on your pc device from source code
+> [!NOTE]
+> For start confirm flutter instalation on your machine.
+``` Bash
+ git clone https://github.com/denver-code/secure_control_panel
+ cd secure_control_panel
+ flutter pub get
+ flutter run lib/main.dart
+```
+##  Build an EXE
+> [!NOTE]
+> For start confirm flutter instalation on your machine.
+``` Bash
+ git clone https://github.com/denver-code/secure_control_panel
+ cd secure_control_panel
+ flutter pub get
+ flutter build windows
+```
+This commands results in EXE file:
+```
+    [project]/build/windows/runner/Release/secure_control_panel.exe
+```
