@@ -2,19 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 
 class TextFieldWidget extends StatelessWidget {
-  const TextFieldWidget(
-      {Key? key,
-      required this.letterSpacing,
-      required this.width,
-      required this.height,
-      required this.hintText,
-      required this.lenghtLimit})
-      : super(key: key);
+  const TextFieldWidget({
+    Key? key,
+    required this.letterSpacing,
+    required this.width,
+    required this.height,
+    required this.hintText,
+    required this.lenghtLimit,
+    required this.textFieldController,
+  }) : super(key: key);
   final double letterSpacing;
   final double width;
   final double height;
   final String hintText;
   final int lenghtLimit;
+  final TextEditingController textFieldController;
 
   @override
   Widget build(BuildContext context) {
@@ -25,6 +27,7 @@ class TextFieldWidget extends StatelessWidget {
         color: Colors.transparent,
       ),
       child: TextFormField(
+        controller: textFieldController,
         style: TextStyle(letterSpacing: letterSpacing, color: Colors.white),
         inputFormatters: [
           LengthLimitingTextInputFormatter(lenghtLimit),
