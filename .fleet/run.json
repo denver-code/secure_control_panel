@@ -1,0 +1,9 @@
+{
+    "configurations": [
+        {
+            "name": "Flutter Run",
+            "type": "command",
+            "program": "run.bat",
+        }
+    ]
+}
