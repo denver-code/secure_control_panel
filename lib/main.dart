@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:desktop_window/desktop_window.dart';
 import 'package:secure_control_panel/screens/authorisation_screen.dart';
-import 'package:secure_control_panel/screens/debug_screen.dart';
-import 'package:secure_control_panel/screens/desktop_screen.dart';
 
 import 'config.dart';
 

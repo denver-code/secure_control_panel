@@ -1,4 +1,4 @@
-import 'package:flutter/foundation.dart';
+import 'package:flutter/material.dart';
 import 'package:secure_control_panel/screens/authorisation_screen.dart';
 import 'package:secure_control_panel/screens/debug_screen.dart';
 import 'package:secure_control_panel/screens/desktop_screen.dart';
@@ -20,7 +20,6 @@ class Config {
   };
 
   static const List applicationList = [
-    //<Map<String, String>>
     {
       "appName": "Debug App",
       "appRoute": "/debug",
@@ -29,9 +28,9 @@ class Config {
     },
   ];
 
-  static var routes = {
+  static Map<String, Widget Function(BuildContext)> routes = {
     "/authorisationScreen": (_) => const AuthorisationScreen(),
     "/desktop": (_) => const DesktopScreen(),
-    "/debug": (_) => DebugScreen()
+    "/debug": (_) => const DebugScreen()
   };
 }

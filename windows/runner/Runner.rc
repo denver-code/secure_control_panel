@@ -95,7 +95,7 @@ BEGIN
             VALUE "InternalName", "secure_control_panel" "\0"
             VALUE "LegalCopyright", "Copyright (C) 2022 com.densec.savenko.scp. All rights reserved." "\0"
             VALUE "OriginalFilename", "secure_control_panel.exe" "\0"
-            VALUE "ProductName", "Secure Control Panel" "\0"
+            VALUE "ProductName", "secure_control_panel" "\0"
             VALUE "ProductVersion", VERSION_AS_STRING "\0"
         END
     END

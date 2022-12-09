@@ -22,6 +22,7 @@ class _DebugScreenState extends State<DebugScreen> {
 
   _getAppInfo() async {
     PackageInfo pi = await PackageInfo.fromPlatform();
+    packageInfo = pi; // I have no idea why but that line help
     setState(() {
       packageInfo = pi;
     });
