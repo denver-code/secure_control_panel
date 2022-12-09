@@ -45,11 +45,13 @@ class AuthorisationScreen extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.spaceBetween,
             children: [
               TextFieldWidget(
-                  letterSpacing: 6.0,
-                  width: MediaQuery.of(context).size.width / 6,
-                  height: 34,
-                  hintText: "Unique UAC",
-                  lenghtLimit: 9),
+                letterSpacing: 6.0,
+                width: MediaQuery.of(context).size.width / 6,
+                height: 34,
+                hintText: "Unique UAC",
+                lenghtLimit: 9,
+                textFieldController: TextEditingController(),
+              ),
               OutlineButtonComponent(
                   gestureTapCallback: () {
                     ScaffoldMessenger.of(context).showSnackBar(
