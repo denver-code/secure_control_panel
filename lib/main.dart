@@ -27,7 +27,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.orange,
       ),
       home: const AuthorisationScreen(),
-      initialRoute: "/authorisationScreen",
+      initialRoute: "/authorisation",
       routes: Config.routes,
     );
   }
