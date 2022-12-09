@@ -30,11 +30,7 @@ class MyApp extends StatelessWidget {
       ),
       home: const AuthorisationScreen(),
       initialRoute: "/authorisationScreen",
-      routes: {
-        "/authorisationScreen": (_) => const AuthorisationScreen(),
-        "/desktop": (_) => const DesktopScreen(),
-        "/debug": (_) => const DebugScreen()
-      },
+      routes: Config.routes,
     );
   }
 }
