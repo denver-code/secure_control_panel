@@ -3,7 +3,7 @@ description: CRM-based staff control system
 
 publish_to: 'none' 
 
-version: 0.1.0+2
+version: 0.1.1+5
 
 environment:
   sdk: ">=2.17.6 <3.0.0"

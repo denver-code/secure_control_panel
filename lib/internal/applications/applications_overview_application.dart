@@ -8,7 +8,7 @@ import '../../config.dart';
 class AppManifest {
   static const Map details = {
     "name": "Applications",
-    "version": "alpha v0.0.1+1",
+    "version": "alpha v0.1.0+2",
     "developer": "Igor Savenko",
   };
 }

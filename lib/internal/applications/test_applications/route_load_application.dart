@@ -10,7 +10,7 @@ import '../../components/widgets/text_field_widget.dart';
 class AppManifest {
   static const Map details = {
     "name": "Route Loader",
-    "version": "alpha v0.1.0+2",
+    "version": "alpha v0.1.1+3",
     "developer": "Igor Savenko",
   };
 }

@@ -5,7 +5,6 @@ import 'package:secure_control_panel/screens/authorisation_screen.dart';
 import 'package:secure_control_panel/screens/desktop_screen.dart';
 
 import 'internal/applications/debug_application.dart' as debug_app;
-import 'internal/applications/test_applications/all_widget_application.dart';
 import 'internal/applications/test_applications/route_load_application.dart'
     as route_load;
 
@@ -56,7 +55,6 @@ class Config {
     "/authorisation": (_) => const AuthorisationScreen(),
     "/desktop": (_) => const DesktopScreen(),
     "/debug": (_) => const debug_app.DebugApplication(),
-    "/allWidgetsApp": (_) => const AllWidgetTestApplicaton(),
     "/routeLoad": (_) => route_load.RouteLoaderApplication(),
     "/applicationsOverview": (_) =>
         const applications_app.ApplicationsOverviewApplication()
